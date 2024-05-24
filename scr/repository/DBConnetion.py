@@ -7,7 +7,7 @@ def cria_conexao():
         connection = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="",
+            password="1234567",
             database="ouvidoria"
         )
         return connection

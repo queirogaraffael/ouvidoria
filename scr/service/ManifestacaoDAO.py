@@ -24,13 +24,13 @@ def cria_manifestacao(manifestacao):
     connection = cria_conexao()
     cursor = connection.cursor()
     try:
-        sql = "INSERT INTO manifestacoes (id, descricao, tipo) VALUES (%s, %s, %s)"
+        sql = "INSERT INTO manifestacoes (descricao, tipo) VALUES (%s, %s)"
         cursor.execute(sql, manifestacao)
         connection.commit()
+        print("\nNova manifestação criada com sucesso!\n")
     except Error as erro:
         print("erro: " + erro.__str__())
     finally:
-        print("\nNova manifestação criada com sucesso!\n")
         cursor.close()
         connection.close()
 
@@ -42,11 +42,12 @@ def retorna_manifestacao_por_codigo(codigo):
         sql = "SELECT * FROM manifestacoes WHERE id = %s"
         cursor.execute(sql, (codigo,))
         manifestacao = cursor.fetchall()
+        print("\nManifestação por código retornada com sucesso!\n")
         return manifestacao
     except Error as erro:
         print("erro: " + erro.__str__())
+        return None
     finally:
-        print("\nManifestação por código retornada com sucesso!\n")
         cursor.close()
         connection.close()
 
@@ -58,11 +59,12 @@ def retorna_manifestcoes():
         sql = "SELECT * FROM manifestacoes"
         cursor.execute(sql)
         manifestacoes = cursor.fetchall()
+        print("\nManifestações retornadas com sucesso!\n")
         return manifestacoes
     except Error as erro:
         print("erro: " + erro.__str__())
+        return None
     finally:
-        print("\nManifestações retornadas com sucesso!\n")
         cursor.close()
         connection.close()
 
@@ -74,11 +76,12 @@ def retorna_manifestacoes_por_tipo(tipo):
         sql = "SELECT * FROM manifestacoes WHERE tipo = %s"
         cursor.execute(sql, (tipo,))
         manifestacoes = cursor.fetchall()
+        print("\nManifestações por tipo retornada com sucesso!\n")
         return manifestacoes
     except Error as erro:
         print("erro: " + erro.__str__())
+        return None
     finally:
-        print("\nManifestações por tipo retornada com sucesso!\n")
         cursor.close()
         connection.close()
 
@@ -90,11 +93,12 @@ def retorna_tamanho_tabela_manifestacoes():
         sql = "SELECT COUNT(*) FROM manifestacoes"
         cursor.execute(sql)
         resultado = cursor.fetchone()
+        print("\nNúmero de manifestações retornada com sucesso!\n")
         return resultado[0]
     except Error as erro:
         print("erro: " + erro.__str__())
+        return None
     finally:
-        print("\nNúmero de manifestações retornada com sucesso!\n")
         cursor.close()
         connection.close()
 
@@ -106,10 +110,11 @@ def retorna_tamanho_tabela_manifestacoes_por_tipo(tipo):
         sql = "SELECT COUNT(*) FROM manifestacoes WHERE tipo = %s"
         cursor.execute(sql, (tipo,))
         resultado = cursor.fetchone()
+        print("\nNúmero de manifestações por tipo retornada com sucesso!\n")
         return resultado[0]
     except Error as erro:
         print("erro: " + erro.__str__())
+        return None
     finally:
-        print("\nNúmero de manifestações por tipo retornada com sucesso!\n")
         cursor.close()
         connection.close()

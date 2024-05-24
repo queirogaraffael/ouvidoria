@@ -59,10 +59,9 @@ def lista_manifestacao_por_tipo():
 
 
 def cria_uma_manifestacao():
-    codigo = int(input("Digite o código da manifestação: "))
     descricao = input("Digite a mensagem da manifestação: ")
     tipo = escolhe_tipo_manifestacao()
-    manifestacao = (codigo, descricao, tipo)
+    manifestacao = (descricao, tipo)
     cria_manifestacao(manifestacao)
 
 
