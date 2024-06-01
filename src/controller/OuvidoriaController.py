@@ -1,14 +1,6 @@
-from scr.view.MenuPrincipalView import menu_view
-from scr.utils.EscolheTipoManifestacao import escolhe_tipo_manifestacao
-from scr.service.ManifestacaoDAO import (
-    cria_manifestacao,
-    remove_manifestacao,
-    retorna_manifestcoes,
-    retorna_manifestacao_por_codigo,
-    retorna_tamanho_tabela_manifestacoes_por_tipo,
-    retorna_manifestacoes_por_tipo,
-    retorna_tamanho_tabela_manifestacoes
-)
+from src.view.MenuPrincipalView import menu_view
+from src.utils.EscolheTipoManifestacao import escolhe_tipo_manifestacao
+from src.service.ManifestacaoDAO import *
 
 
 def ouvidoria_controller():
@@ -71,6 +63,7 @@ def exibe_numero_manifestacoes():
 
 
 def pesquisa_manifestacao_por_codigo():
+    # fazer tratamento
     codigo = int(input("Digite o código da manifestação: "))
     manifestacao = retorna_manifestacao_por_codigo(codigo)
 

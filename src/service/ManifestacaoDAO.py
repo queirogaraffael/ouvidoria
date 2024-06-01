@@ -1,4 +1,4 @@
-from scr.repository.DBConnetion import cria_conexao
+from src.repository.DBConnetion import cria_conexao
 from mysql.connector import Error
 
 

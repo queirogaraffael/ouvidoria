@@ -6,10 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a5704d74-d7a4-481d-aced-19d223008e60" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query_db/queryDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/query_db/queryDB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr/controller/OuvidoriaController.py" beforeDir="false" afterPath="$PROJECT_DIR$/scr/controller/OuvidoriaController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr/repository/DBConnetion.py" beforeDir="false" afterPath="$PROJECT_DIR$/scr/repository/DBConnetion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scr/service/ManifestacaoDAO.py" beforeDir="false" afterPath="$PROJECT_DIR$/scr/service/ManifestacaoDAO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/.idea/ProjetoOuvidoria.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/ProjetoOuvidoria.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/controller/OuvidoriaController.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/OuvidoriaController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/main/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/repository/DBConnetion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/DBConnetion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/service/ManifestacaoDAO.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ManifestacaoDAO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/utils/EscolheTipoManifestacao.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/EscolheTipoManifestacao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/view/MenuCategoriasView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MenuCategoriasView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scr/view/MenuPrincipalView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MenuPrincipalView.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +46,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Main.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -65,5 +73,16 @@
       <updated>1716508514225</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

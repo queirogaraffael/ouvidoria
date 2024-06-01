@@ -1,4 +1,4 @@
-from scr.view.MenuCategoriasView import menu_categorias_view
+from src.view.MenuCategoriasView import menu_categorias_view
 
 
 def escolhe_tipo_manifestacao():
